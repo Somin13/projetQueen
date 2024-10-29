@@ -1,0 +1,294 @@
+/* 
+body{
+   background-image: url(../image/20d331d1-9da2-4f97-87c3-5518eb37c3c9.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(28, 3, 3);
+    height: 65px;
+    border-radius: 50px;
+    border-bottom: 1px solid rgba(115, 22, 22, 0.893);
+    border-bottom-left-radius: 200px ;
+    border-bottom-right-radius: 200px ;
+}
+
+nav ul {
+    
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    position: relative;
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    color: rgb(211, 152, 152);
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: "Irish Grover", system-ui;
+    font-size: 25px;
+    
+    
+}
+
+nav > ul > li:hover > a {
+    color: red;
+    font-family: "Nosifer", sans-serif;
+    font-size: 18px;
+}
+
+.listdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.listdown li {
+    display: block;
+}
+
+.listdown li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: rgb(211, 152, 152);
+    font-family: "Irish Grover", system-ui;
+    font-size: 20px;
+}
+
+nav > ul > li:hover .listdown {
+    display: block;
+    
+}
+
+.list li a:hover {
+    background-color: #575757;
+}
+
+.difficul{
+    background-color: black;
+}
+
+.logo{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    animation: beat 2s infinite;
+    transform: translate(-50%, -50%);
+    bottom:78%;
+    left: 50%;
+    
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.logo img{
+    width: 25%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.sound-msk{
+    font-family: "Irish Grover", system-ui;
+    font-size: 25px;
+    display: flex;
+    
+}
+
+.sound{
+    color: rgb(211, 152, 152)
+}
+
+#start-screen{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.653);
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Nosifer", sans-serif;
+    color: rgb(168, 5, 5);
+    position: absolute;
+    gap: 50px;
+    bottom: 40%;
+    padding: 50px;
+}
+
+#start-screen button{
+    background-color: rgb(110, 21, 21);
+    color: rgb(201, 170, 170);
+    font-size: 25px;
+    font-family: "Irish Grover", system-ui;
+}
+
+#img-container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+#queen{
+    position: absolute;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+#queen img{
+    width: 150px;
+}
+
+.start-screen {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.517);
+    margin: 70px;
+    padding: 5px;
+}
+
+.haut{
+    font-size: 30px;
+    font-family: "Nosifer", sans-serif;
+    color: rgb(128, 8, 8);
+}
+
+.bas{
+    font-size: 22px;
+    font-family: "Irish Grover", system-ui;
+    color: rgb(211, 152, 152);
+}
+
+#score-compter{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-family: "Nosifer", sans-serif;
+    text-align: center;
+    margin-left: 42%;
+    margin-right: 42%;
+
+}
+
+#start-button {
+    font-size: 20px;
+    background-color: rgb(89, 16, 16);
+    color: rgb(211, 152, 152);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Nosifer", sans-serif;
+
+}
+
+#win-screen {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.517);
+    margin: 70px;
+    padding: 5px;
+}
+
+
+
+#restar-button {
+    font-size: 20px;
+    background-color: rgb(89, 16, 16);
+    color: rgb(211, 152, 152);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Nosifer", sans-serif;
+
+}
+
+#win-message{
+    font-size: 22px;
+    font-family: "Irish Grover", system-ui;
+    color: rgb(211, 152, 152);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Nosifer&family=Rubik+Wet+Paint&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(../image/20d331d1-9da2-4f97-87c3-5518eb37c3c9.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+}
+
+#game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.clown {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    background-image: url(../image/pngtree-queen-of-hearts-happy-mothers-day-png-image_12446360.png);
+    border-radius: 50%;
+    display: none;
+    background-size: cover;
+    background-size: cover;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 30px;
+    font-family: "Nosifer", sans-serif;
+    color: rgb(212, 14, 14);
+}
+
+.bar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(28, 3, 3);
+    height: 65px;
+    border-radius: 50px;
+    border-bottom: 1px solid rgba(115, 22, 22, 0.893);
+    border-bottom-left-radius: 200px ;
+    border-bottom-right-radius: 200px ;
+    color: aliceblue;
+    width: 100%;
+}
+
+.img-container {
+    position: absolute;
+    left: 50%;
+    top: 5px;    
+}
+
+.heart{
+    position: absolute;
+    width: 100px;
+}
+
+.heart img{
+    width: 10px;
+}
